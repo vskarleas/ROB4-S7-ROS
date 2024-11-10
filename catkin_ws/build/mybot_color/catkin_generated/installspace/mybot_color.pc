@@ -1,0 +1,8 @@
+prefix=/Users/vasilisskarleas/Desktop/catkin_ws/install
+
+Name: mybot_color
+Description: Description of mybot_color
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/miniconda3/envs/ros/lib/python3.11/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/miniconda3/envs/ros/lib/python3.11/site-packages"
+    ]
+}

@@ -1,0 +1,2 @@
+mybot_color:mybot_teleop
+-DCATKIN_DEVEL_PREFIX=/Users/vasilisskarleas/Desktop/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/Users/vasilisskarleas/Desktop/catkin_ws/install -G Unix Makefiles
