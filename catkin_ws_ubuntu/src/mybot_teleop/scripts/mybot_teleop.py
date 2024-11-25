@@ -26,13 +26,13 @@ def talker():
 def get_twist_message(direction):
     twist = Twist()
     if direction == 'up':
-        twist.linear.x = 0.5
+        twist.linear.x = rospy.get_param("linear_scale")
     elif direction == 'down':
-        twist.linear.x = -0.5
+        twist.linear.x = -(rospy.get_param("linear_scale"))
     elif direction == 'left':
-        twist.angular.z = 0.5
+        twist.angular.z = rospy.get_param("angular_scale")
     elif direction == 'right':
-        twist.angular.z = -0.5
+        twist.angular.z = -(rospy.get_param("angular_scale"))
     else:  # stop or quit
         twist.linear.x = 0
         twist.angular.z = 0

@@ -4,19 +4,13 @@
 import rospy
 from turtlesim.msg import Pose
 from turtlesim.srv import SetPen
-import time
 
 last_change_time = 0
 change_interval = 0.1  # every 100ms
 
 def change_pen_color(r, g, b, width, off):
-    global last_change_time
-    current_time = time.time()
-    
-    if current_time - last_change_time < change_interval:
-        return  # Skip if called too frequently
 
-    last_change_time = current_time
+    rospy.wait_for_service('/turtle1/set_pen')
 
     try:
         set_pen = rospy.ServiceProxy('/turtle1/set_pen', SetPen)
@@ -44,7 +38,6 @@ if __name__ == '__main__':
         rospy.loginfo("mybot_color node started.") # Debugging message
 
         # Wait for the set_pen service to become available
-        rospy.wait_for_service('/turtle1/set_pen')
         rospy.loginfo("set_pen service is available.")
 
         # Define the subscriber on the /turtle1/pose topic
