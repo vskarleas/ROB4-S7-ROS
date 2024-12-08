@@ -16,18 +16,13 @@ g = 9.80665      # Gravitational acceleration (m/s^2)
 # Global variables to store the temperature and pressure
 current_temperature = None
 current_pressure = None
-altitude = None
-# Service client for altitude warning
-altitude_warning_service = None
-
-# Variables to handle threshold-based warning
-threshold = 1300.0  # Default value for threshold
-time_above_threshold = None  # Time when the altitude exceeds the threshold
-warning_triggered = False  # Flag to track if warning was triggered
+threshold = None  # This will store the threshold value from the launch file
+time_above_threshold = None  # To track when the altitude first exceeds the threshold
+warning_triggered = False  # To track whether the warning has been triggered
 
 def get_threshold_param():
     global threshold
-    threshold = rospy.get_param('threshold', 1300.0)  # Get the threshold parameter from the launch file
+    threshold = rospy.get_param('threshold')  # Get the threshold parameter from the launch file
 
 
 def read_temperature_callback(msg):
@@ -48,18 +43,20 @@ def read_pressure_callback(msg):
     else:
         rospy.loginfo("Pressure is less than 100: %.2f", current_pressure)
 
-def altitude_warning_callback(req):
-    # This function simulates the service response
-    return TriggerResponse(success=True, message="ALT WARN Indicator status updated.")
+def altitude_warning_callback():
+    global warning_triggered
 
-def trigger_altitude_warning():
-    # This function triggers the /altitude_warning service if needed
-    global altitude_warning_service
-    try:
-        response = altitude_warning_service()
-        rospy.loginfo(f"Service called: {response.message}")
-    except rospy.ServiceException as e:
-        rospy.logerr(f"Service call failed: {e}")
+    if warning_triggered:
+        rospy.loginfo("ALERT: Altitude has been above the threshold for 5 seconds! Turning the warning light RED!")
+        # Add your service call to change the indicator to red here
+        # You can call your service like: rospy.ServiceProxy('/altitude_warning', ...)
+
+        rospy.wait_for_service('/altitude_warning')  # Wait for the service to be available
+        altitude_warning_service = rospy.ServiceProxy('/altitude_warning', Trigger)  # Create the service proxy
+        
+        altitude_warning_service()
+    else:
+        rospy.loginfo("Altitude warning light is GREEN. Altitude is safe.")
 
 def talker():
     pub = rospy.Publisher('/altitude', float_, queue_size=10)
@@ -71,11 +68,6 @@ if __name__ == '__main__':
 
         # Get the threshold parameter from the launch file
         get_threshold_param()
-
-        # Initialize the service client for altitude_warning service
-        rospy.wait_for_service('/altitude_warning')  # Wait for the service to be available
-        altitude_warning_service = rospy.ServiceProxy('/altitude_warning', Trigger)  # Create the service proxy
-
 
         pub = talker()
         rospy.loginfo("exam_node node started.") # Debugging message
@@ -93,31 +85,30 @@ if __name__ == '__main__':
                 try:
                     # Calculate the altitude
                     altitude = (r * current_temperature / (mi * g)) * log(p0 / current_pressure)
-                    
-                    # Debugging log to check if the altitude calculation is successful
-                    rospy.loginfo(f"Calculated Altitude: {altitude}")
 
                     pub.publish(altitude)
 
-                    # Check if the altitude exceeds the threshold
-                    # Check if the altitude exceeds the threshold
+
+                    # Debugging log to check if the altitude calculation is successful
+                    rospy.loginfo(f"Calculated Altitude: {altitude}")
+
                     if altitude > threshold:
                         if time_above_threshold is None:
-                            # Set the initial time when altitude exceeds the threshold
-                            time_above_threshold = time()
+                            time_above_threshold = time()  # Record the time when altitude first exceeds the threshold
+                            warning_triggered = False  # Reset warning trigger status
 
-                        # If drone stays above threshold for more than 5 seconds, trigger the warning
+                        # If the altitude has been above the threshold for more than 5 seconds, trigger the warning
                         if time() - time_above_threshold > 5 and not warning_triggered:
-                            rospy.loginfo("Altitude exceeded threshold for 5 seconds. Triggering warning.")
-                            trigger_altitude_warning()
-                            warning_triggered = True
+                            warning_triggered = True  # Mark the warning as triggered
+                            altitude_warning_callback()  # Call the callback to trigger the warning
 
                     else:
-                        # Reset the time and warning flag if altitude is below threshold
-                        time_above_threshold = None
-                        warning_triggered = False
-                        rospy.loginfo("Altitude is below threshold. ALT WARN indicator should be green.")
-                
+                        time_above_threshold = None  # Reset the time if altitude goes below the threshold
+                        warning_triggered = False  # Reset warning trigger
+                        altitude_warning_callback()  # Ensure warning indicator is green when altitude is safe
+
+
+                    
 
                 except Exception as e:
                     rospy.logerr(f"Error calculating altitude: {e}")

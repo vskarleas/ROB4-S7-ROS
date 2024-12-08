@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
-  <param name="threshold" value="1300.0" />
+  <param name="threshold" value="13.0" />
 
   <node pkg="mydrone" name="mydrone" type="mydrone_node_obf.py" 
         output="screen" required="true">
