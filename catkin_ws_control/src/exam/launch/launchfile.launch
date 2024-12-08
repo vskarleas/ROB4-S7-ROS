@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <param name="threshold" value="1300.0" />
+
+  <node pkg="mydrone" name="mydrone" type="mydrone_node_obf.py" 
+        output="screen" required="true">
+  </node>	
+  <node pkg="exam" name="exam_node" type="exam_node.py" 
+        output="screen" required="true">
+  </node>	
+  
+
+</launch>

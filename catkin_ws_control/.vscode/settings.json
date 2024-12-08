@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel/lib/python3.11/site-packages",
+        "/home/vasilisskarleas/anaconda3/envs/ros/lib/python3.11/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel/lib/python3.11/site-packages",
+        "/home/vasilisskarleas/anaconda3/envs/ros/lib/python3.11/site-packages"
+    ]
+}
