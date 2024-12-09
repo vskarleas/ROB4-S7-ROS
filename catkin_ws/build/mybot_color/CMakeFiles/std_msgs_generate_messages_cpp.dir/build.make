@@ -53,10 +53,10 @@ RM = /opt/miniconda3/envs/ros/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vasilisskarleas/Desktop/catkin_ws/src
+CMAKE_SOURCE_DIR = "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vasilisskarleas/Desktop/catkin_ws/build
+CMAKE_BINARY_DIR = "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/build"
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -74,10 +74,10 @@ mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_genera
 .PHONY : mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /Users/vasilisskarleas/Desktop/catkin_ws/build/mybot_color && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/build/mybot_color" && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /Users/vasilisskarleas/Desktop/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/vasilisskarleas/Desktop/catkin_ws/src /Users/vasilisskarleas/Desktop/catkin_ws/src/mybot_color /Users/vasilisskarleas/Desktop/catkin_ws/build /Users/vasilisskarleas/Desktop/catkin_ws/build/mybot_color /Users/vasilisskarleas/Desktop/catkin_ws/build/mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/src" "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/src/mybot_color" "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/build" "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/build/mybot_color" "/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_ws/build/mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : mybot_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 
