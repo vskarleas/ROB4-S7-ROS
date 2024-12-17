@@ -53,10 +53,10 @@ RM = /home/vasilisskarleas/anaconda3/envs/ros/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src
+CMAKE_SOURCE_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build
+CMAKE_BINARY_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build
 
 # Utility rule file for std_msgs_generate_messages_eus.
 
@@ -77,10 +77,10 @@ mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/build: std_msgs_generate_m
 .PHONY : mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 
 mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	cd /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/mydrone && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/mydrone && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/depend:
-	cd /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src/mydrone /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/mydrone /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src/mydrone /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/mydrone /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : mydrone/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 

@@ -1,8 +1,8 @@
-prefix=/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel
+prefix=/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel
 
 Name: mydrone
 Description: Description of mydrone
 Version: 0.0.1
-Cflags: -I/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel/include
+Cflags: -I/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

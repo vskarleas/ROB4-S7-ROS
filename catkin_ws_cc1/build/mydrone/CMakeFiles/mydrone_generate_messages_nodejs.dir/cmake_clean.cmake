@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel/share/gennodejs/ros/mydrone/srv/alt_warning.js"
+  "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel/share/gennodejs/ros/mydrone/srv/alt_warning.js"
   "CMakeFiles/mydrone_generate_messages_nodejs"
 )
 

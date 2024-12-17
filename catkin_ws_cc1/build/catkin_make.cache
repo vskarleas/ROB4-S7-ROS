@@ -1,2 +1,2 @@
-exam:mydrone
--DCATKIN_DEVEL_PREFIX=/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel -DCMAKE_INSTALL_PREFIX=/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/install -G Unix Makefiles
+exam:mydrone:v2
+-DCATKIN_DEVEL_PREFIX=/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel -DCMAKE_INSTALL_PREFIX=/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/install -G Unix Makefiles

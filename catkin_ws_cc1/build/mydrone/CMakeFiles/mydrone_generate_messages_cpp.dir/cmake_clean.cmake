@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel/include/mydrone/alt_warning.h"
+  "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel/include/mydrone/alt_warning.h"
   "CMakeFiles/mydrone_generate_messages_cpp"
 )
 

@@ -53,10 +53,10 @@ RM = /home/vasilisskarleas/anaconda3/envs/ros/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src
+CMAKE_SOURCE_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build
+CMAKE_BINARY_DIR = /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build
 
 # Utility rule file for tests.
 
@@ -81,6 +81,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tests.dir/depend
 

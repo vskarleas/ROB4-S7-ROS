@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <param name="threshold" value="30" />
+  
+  <node pkg="v2" name="v2" type="code.py" output="screen" required="true"></node>
+  <node pkg="mydrone" name="mydrone" type="mydrone_node_obf.py" output="screen" required="true"></node>
+
+</launch>

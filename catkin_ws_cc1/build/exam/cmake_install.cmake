@@ -1,8 +1,8 @@
-# Install script for directory: /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src/exam
+# Install script for directory: /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src/exam
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,23 +43,23 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/exam/catkin_generated/installspace/exam.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/exam/catkin_generated/installspace/exam.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/exam/cmake" TYPE FILE FILES
-    "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/exam/catkin_generated/installspace/examConfig.cmake"
-    "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/exam/catkin_generated/installspace/examConfig-version.cmake"
+    "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/exam/catkin_generated/installspace/examConfig.cmake"
+    "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/exam/catkin_generated/installspace/examConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/exam" TYPE FILE FILES "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src/exam/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/exam" TYPE FILE FILES "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src/exam/package.xml")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/build/exam/install_local_manifest.txt"
+  file(WRITE "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/build/exam/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

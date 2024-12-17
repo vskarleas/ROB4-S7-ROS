@@ -67,14 +67,14 @@ set(mydrone_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mydrone_SOURCE_PREFIX /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src/mydrone)
-  set(mydrone_DEVEL_PREFIX /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel)
+  set(mydrone_SOURCE_PREFIX /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src/mydrone)
+  set(mydrone_DEVEL_PREFIX /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel)
   set(mydrone_INSTALL_PREFIX "")
   set(mydrone_PREFIX ${mydrone_DEVEL_PREFIX})
 else()
   set(mydrone_SOURCE_PREFIX "")
   set(mydrone_DEVEL_PREFIX "")
-  set(mydrone_INSTALL_PREFIX /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/install)
+  set(mydrone_INSTALL_PREFIX /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/install)
   set(mydrone_PREFIX ${mydrone_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/install/lib;/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel/lib;/home/vasilisskarleas/anaconda3/envs/ros/lib)
+    foreach(path /home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/install/lib;/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel/lib;/home/vasilisskarleas/anaconda3/envs/ros/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

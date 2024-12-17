@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "mydrone"
-PROJECT_SPACE_DIR = "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/install"
+PROJECT_SPACE_DIR = "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/install"
 PROJECT_VERSION = "0.0.1"

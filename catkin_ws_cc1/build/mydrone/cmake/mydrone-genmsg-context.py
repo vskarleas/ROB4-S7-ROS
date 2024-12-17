@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/src/mydrone/srv/alt_warning.srv"
+services_str = "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/src/mydrone/srv/alt_warning.srv"
 pkg_name = "mydrone"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

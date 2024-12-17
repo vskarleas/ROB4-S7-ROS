@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_control/devel/share/common-lisp/ros/mydrone/srv/alt_warning.lisp"
+  "/home/vasilisskarleas/Documents/ROB4-S7-ROS/catkin_ws_cc1/devel/share/common-lisp/ros/mydrone/srv/alt_warning.lisp"
   "CMakeFiles/mydrone_generate_messages_lisp"
 )
 
