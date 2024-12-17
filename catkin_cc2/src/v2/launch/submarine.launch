@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <!-- Define the max depth parameter -->
+  <param name="max_depth" value="140.0" />
+
+  <!-- Run the submarine drone node -->
+  <node pkg="submarinedrone" name="submarine_drone_node" type="submarine_drone_node.py" 
+        output="screen" required="true">
+  </node>	
+
+  <!-- Run the exam node and pass the parameter -->
+  <node pkg="v2" name="v2" type="v2.py" 
+        output="screen" required="true">
+  </node>	
+
+</launch>

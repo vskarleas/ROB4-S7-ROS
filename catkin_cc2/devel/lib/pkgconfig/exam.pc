@@ -1,0 +1,8 @@
+prefix=/home/vasilisskarleas/Downloads/catkin_ws/devel
+
+Name: exam
+Description: Description of exam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

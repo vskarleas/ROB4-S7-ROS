@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/vasilisskarleas/catkin_ws/devel/include/**",
+        "/home/vasilisskarleas/anaconda3/envs/ros/include/**",
+        "/home/vasilisskarleas/anaconda3/envs/ros/aarch64-conda-linux-gnu/sysroot/usr/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

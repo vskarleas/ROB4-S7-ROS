@@ -1,0 +1,2 @@
+set(submarinedrone_MESSAGE_FILES "")
+set(submarinedrone_SERVICE_FILES "/home/vasilisskarleas/catkin_ws/src/submarinedrone/submarinedrone/srv/depth_warning.srv")

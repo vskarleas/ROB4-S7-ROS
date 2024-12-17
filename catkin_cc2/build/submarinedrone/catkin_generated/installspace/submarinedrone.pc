@@ -1,0 +1,8 @@
+prefix=/home/vasilisskarleas/Downloads/catkin_ws/install
+
+Name: submarinedrone
+Description: Description of submarinedrone
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
