@@ -1,0 +1,8 @@
+prefix=/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_cc/devel
+
+Name: submarinedrone
+Description: Description of submarinedrone
+Version: 0.0.1
+Cflags: -I/Users/vasilisskarleas/Library/Mobile Documents/com~apple~CloudDocs/Documents/University Sorbonne/4th year/S7/Computer science for robotics/ROS/catkin_cc/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
