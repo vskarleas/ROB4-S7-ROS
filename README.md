@@ -4,11 +4,15 @@
 
 ### English
 
-This course, led by Ludovic Saint-Bauzel in 2021, provides an in-depth understanding of the Robotics Operating System (ROS1). It covers the essential concepts, tools, and techniques necessary to implement robotic systems, from basic communication infrastructure to complex robot functionalities. Topics include ROS architecture, message passing, service management, visualization tools, and integration with external libraries such as Gazebo, OpenCV, and MoveIt. The course is ideal for anyone interested in learning how to use ROS to build and control robots.
+This course provides an in-depth understanding of the Robotics Operating System (ROS1). It covers the essential concepts, tools, and techniques necessary to implement robotic systems, from basic communication infrastructure to complex robot functionalities. Topics include ROS architecture, message passing, service management, visualization tools, and integration with external libraries such as Gazebo, OpenCV, and MoveIt. The course is ideal for anyone interested in learning how to use ROS to build and control robots.
+
+**Under the CC1 and CC2 folders you will find two different exams for ROS1, minly focused on creating different subsrcibers and publishes, implemnting a Service via ServiceProxy, as well as creating a launchfile. The folders catki_ws_cc1 and catkin_cc2 include the resolution for the two exams respectfully. You will find different versions for the same pkg. v2 is always the best implementation.** 
 
 ### French
 
-Ce cours, dirigé par Ludovic Saint-Bauzel en 2021, offre une compréhension approfondie du système d'exploitation robotique (ROS1). Il couvre les concepts, les outils et les techniques essentiels nécessaires à la mise en œuvre de systèmes robotiques, de l'infrastructure de communication de base aux fonctionnalités robotisées complexes. Les sujets incluent l'architecture ROS, la transmission de messages, la gestion des services, les outils de visualisation, et l'intégration avec des bibliothèques externes telles que Gazebo, OpenCV et MoveIt. Ce cours est idéal pour toute personne souhaitant apprendre à utiliser ROS pour construire et contrôler des robots.
+Ce cours offre une compréhension approfondie du système d'exploitation robotique (ROS1). Il couvre les concepts, les outils et les techniques essentiels nécessaires à la mise en œuvre de systèmes robotiques, de l'infrastructure de communication de base aux fonctionnalités robotisées complexes. Les sujets incluent l'architecture ROS, la transmission de messages, la gestion des services, les outils de visualisation, et l'intégration avec des bibliothèques externes telles que Gazebo, OpenCV et MoveIt. Ce cours est idéal pour toute personne souhaitant apprendre à utiliser ROS pour construire et contrôler des robots.
+
+**Sous les dossiers CC1 et CC2, vous trouverez deux examens différents pour ROS1, axés principalement sur la création de différents abonnés et publications, l'implémentation d'un service via ServiceProxy, ainsi que la création d'un fichier de lancement. Les dossiers catki_ws_cc1 et catkin_cc2 incluent respectivement la résolution des deux examens. Vous trouverez différentes versions pour le même package. v2 est toujours la meilleure implémentation.**
 
 ## Key Topics
 
