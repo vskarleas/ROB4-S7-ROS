@@ -62,7 +62,7 @@ The course also discusses the key differences between ROS1 and ROS2, including c
 
 ---
 
-# French
+# Français
 
 Ce cours offre une compréhension approfondie du système d'exploitation robotique (ROS1). Il couvre les concepts, les outils et les techniques essentiels nécessaires à la mise en œuvre de systèmes robotiques, de l'infrastructure de communication de base aux fonctionnalités robotisées complexes. Les sujets incluent l'architecture ROS, la transmission de messages, la gestion des services, les outils de visualisation, et l'intégration avec des bibliothèques externes telles que Gazebo, OpenCV et MoveIt. Ce cours est idéal pour toute personne souhaitant apprendre à utiliser ROS pour construire et contrôler des robots.
 
