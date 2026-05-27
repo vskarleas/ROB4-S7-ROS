@@ -1,4 +1,4 @@
-# ROS1 Course - Robotics Operating System
+# ROB4-S7: ROS1 - Robotics Operating System
 
 [English](#english) | [Français](#français)
 
